@@ -1,36 +1,60 @@
 // Sincronizar las letras con la canción
 var audio = document.querySelector("audio");
+//audio.currentTime = 110;    
 var lyrics = document.querySelector("#lyrics");
 
 // Array de objetos que contiene cada línea y su tiempo de aparición en segundos
 var lyricsData = [
-  { text: "At the time", time: 15 },
-  { text: "The whisper of birds", time: 18 },
-  { text: "Lonely before the sun cried", time: 27 },
-  { text: "Fell from the sky", time: 32 },
-  { text: "Like water drops", time: 33 },
-  { text: "Where I'm now? I don't know why", time: 41 },
-  { text: "Nice butterflies in my hands", time: 47 },
-  { text: "Too much light for twilight", time: 54 },
-  { text: "In the mood for the flowers love", time: 59 },
-  { text: "That vision", time: 67 },
-  { text: "Really strong, blew my mind", time: 72 },
-  { text: "Silence Let me see what it was", time: 78 },
-  { text: "I only want to live in clouds", time: 83 },
-  { text: "Where I'm now? I don't know why", time: 91 },
-  { text: "Nice butterflies in my hands", time: 97 },
-  { text: "Too much light for twilight", time: 104 },
-  { text: "In the mood for the flowers love", time: 108 },
-  { text: "At the time", time: 144 },
-  { text: "The whisper of birds", time: 148 },
-  { text: "Lonely before the sun cried", time: 153 },
-  { text: "Fell from the sky", time: 158 },
-  { text: "Like water drops", time: 164 },
-  { text: "Where I'm now? I don't know why", time: 169 },
-  { text: "Nice butterflies in my hands", time: 176 },
-  { text: "Too much light for twilight", time: 183 },
-  { text: "In the mood for the flowers", time: 188 },
-  { text: "Love.", time: 140 },
+  { text: "I'm going back to 505", time: 10 },
+  { text: "If it's a seven hour flight or a forty-five", time: 14 },
+  { text: " minute drive ", time: 17 },
+  { text: "In my imagination, you're waiting lying on your ", time: 22 },
+  { text: "side", time: 24 },
+  { text: "With your hands between your thighs", time: 27 },
+
+  { text: "Stop and wait a sec' Oh, when you look at me like", time: 39 },
+  { text: " that, my darling, ", time: 41 },
+  { text: "what did you expect?  ", time: 43 },
+  { text: "I'd probably still adore you with your hands around", time: 49 },
+  { text: " my neck", time: 50 },
+  { text: "Or I did last time I checked", time: 56 },
+  
+
+  { text: "Not shy of a spark, A knife twists", time: 66 },
+  { text: " at the thought that I should fall short", time: 69 },
+  { text: " of the mark  ", time: 72 },
+
+  { text: "Frightened by the bite, though it's no harsher than", time: 77 },
+  { text: " the bark ", time: 79 },
+
+  { text: "The middle of adventure is such a perfect place", time: 83 },
+  { text: "to start", time: 86  },
+
+  { text: "I'm going back to 505, If it's a seven", time: 92 },
+  { text: "hour flight or a", time: 96 },
+  { text: "45-minute drive", time: 99  },
+
+  { text: "In my imagination, you're waiting lying on your", time: 104 },
+  { text: "side", time:105  },
+
+  { text: "With your hands between your thighs", time: 111 },
+
+  { text: "But I crumble completely when you cry", time: 147 },
+  { text: "It seems like once again you've had to ", time: 150 },
+  { text: "greet me with goodbye", time:153  },
+
+  { text: "I'm always just about to go and ", time: 157 },
+  { text: "spoil a surprise", time: 160 },
+
+  { text: "Take my hands off of your eyes too soon", time: 165 },
+
+  { text: "I'm going back to 505, If it's a seven", time: 175 },
+  { text: "hour flight or a ", time: 178 },
+  { text: "45-minute drive", time:180  },
+
+  { text: "In my imagination, you're waiting lying  ", time: 185 },
+  { text: "on your side", time: 186 },
+  { text: "With your hands between your thighs and a smile", time: 193 },
 ];
 
 // Animar las letras
